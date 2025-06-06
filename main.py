@@ -20,7 +20,7 @@ gc.collect()
 
 
 #Initialize I2C
-i2c = I2C(0, scl=Pin(4), sda=Pin(5))
+i2c = I2C(0, scl=Pin(5), sda=Pin(6))
 
 # Initialize OLED Display (128x64 resolution)
 oled = ssd1306.SSD1306_I2C(128, 64, i2c)
@@ -35,7 +35,7 @@ oled.text("in the main.py", 0, 0)
 oled.show()
 
 
-led = Pin(7 , Pin.OUT)
+led = Pin(4 , Pin.OUT)
 
 
 
